@@ -1,0 +1,129 @@
+.top-section{
+  background-image: url(./Images/back1.jpg);
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+}
+
+li a:active{
+  background-color: black;
+}
+#home{
+  height: 755px;
+}
+.inner-home{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner-home h1{
+    font-size: 80px;
+}
+@media only screen and (max-width: 500px) {
+  .inner-home h1{
+    font-size: 60px;
+  }
+}
+.inner-home p{
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+}
+.inner-home small{
+  font-size: 20px;
+}
+.social a{
+  color: silver
+}
+.social a:hover{
+  color: rgb(92, 116, 250);
+}
+.down-arrow{
+  bottom: 0;
+}
+.console{
+  background: #ccc;
+  height: 1020px;
+}
+.code{
+  height: 65%;
+  width: 50%;
+  padding: 40px;
+  background: #383737;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  border: 10px solid darkgrey;
+}
+.code .answer{
+  color: #ccc;
+}
+@media only screen and (max-width: 1200px) {
+  .console{
+    height: 800px;
+  }
+  .console .code{
+    width: 80%;
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .console{
+    height: 760px;
+  }
+  .console .code{
+    width: 90%;
+    height: 90%;
+  }
+  .code{
+    padding:30px 20px;
+  }
+}
+
+#resume{
+  font-size: 17px;
+  line-height: 40px;
+}
+.resume-heading{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-size: 35px;
+  -webkit-box-shadow: 0 9px 6px -6px grey;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0 9px 6px -6px grey;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0 9px 6px -6px grey;
+}
+.section-education{
+  width: 60%;
+}
+.resume-education{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1200px) {
+  .section-education{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section-education{
+    width: 85%;
+  }
+}
+
+.skill{ 
+  border-radius: 10%;
+  font-size: 14px;
+}
+#internship{
+  font-size: 19px;
+  line-height: 40px;
+}
+form{
+  width: 80%;
+}
+@media only screen and (max-width: 800px) {
+  form{
+    width: 100%;
+  }
+}
