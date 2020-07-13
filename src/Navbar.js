@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import myStyle from './myStyle.css'
 import Resume from './Resume.pdf'
 
@@ -6,45 +6,54 @@ class Navbar extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          name: '',
-          email: '',
-          subject: 'Contact Form',
-          message:''
+          navBackground: ''
         };
       }
-      myChangeHandler = (event) => {
-        let nam = event.target.name;
-        let val = event.target.value;
-        this.setState({[nam]: val});
+      componentDidMount() {
+        document.addEventListener("scroll", () => {
+          const backgroundcolor = window.scrollY < 70 ? "" : "rgba(255,255,255,0.95)";
+    
+          this.setState({ navBackground: backgroundcolor });
+        });
       }
     render(){
-        return(
+         return(
 
         <div className="container-fluid" style={{position:"relative",margin:"0",padding:"0"}}>
             <div className="top-section">
-                <nav id="navbar" className="navbar navbar-expand-lg navbar-dark fixed-top">
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                <nav id="navbar" className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: `${this.state.navBackground}`}}>
+                <div className="container">
+                    <button class="navbar-toggler" id='toggle-menu-btn' type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <path stroke="#E71D2B" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                                    d="M4 7h22M4 15h22M4 23h22"></path>
+                            </svg>
+                        </span>
                     </button>
-
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mx-auto">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#home">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#resume">Resume</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link" href="#internship">Internship</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contact</a>
-                        </li>
-                        </ul>
+                    <a class="navbar-brand page-scroll" href="#home"> SARVESH KHANDELWAL</a>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item pr-3">
+                                    <a className="nav-link" href="#home">About
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item pr-3">
+                                    <a className="nav-link" href="#resume">Resume</a>
+                                </li>
+                                <li className="nav-item pr-3">
+                                    <a className="nav-link" href="#internship">Internship/Projects</a>
+                                </li>
+                                <li className="nav-item pr-3">
+                                    <a className="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </nav>
+                    </nav>
                 <div id="home" className="position-relative">
                     <div className="inner-home tent-center position-absolute text-white">
                         <h1>I'm Sarvesh Khandelwal</h1>
@@ -93,7 +102,7 @@ class Navbar extends React.Component{
                     <p>>> getInterest()</p>
                     <p className="answer">&nbsp; => ["Web Development", "Software Development" , "Machine Learning"]</p>
                     <p>>> getResume()</p>
-                    <p className="answer">&nbsp; => "<a target="_blank" href={Resume}>sarveshResume.pdf</a>"</p>
+                    <p className="answer">&nbsp; => "<a target="_blank" rel="noopener noreferrer" href={Resume}>sarveshResume.pdf</a>"</p>
                     <p>>> getEmail()</p>
                     <p className="answer">&nbsp; => "<a href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email">
                         khandelwalsarvesh8@gmail.com</a>"
@@ -131,16 +140,26 @@ class Navbar extends React.Component{
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">HTML</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">CSS</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">JavaScript</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Bootstrap</span>
+                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">SQL</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">DBMS</span>
+                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">SQL</span>
+                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
+                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
                 </div>
             </div>
             <br />
             <div id="internship" className="mx-auto p-3 border-top text-left">
                 <div className="section-education mx-auto p-2">
                     <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
+                    <p className="college">
+                        <b>Invide Labs</b>
+                        <span className="float-right lead">
+                            <i>25 May 2019-25 July 2020</i>
+                        </span>
+                        <br />
+                        <h5>SDE Intern</h5>
+                    </p>
                     <p className="college">
                         <b>SAHU TECHNOLOGIES</b>
                         <span className="float-right lead">
@@ -149,9 +168,6 @@ class Navbar extends React.Component{
                         <br />
                         <h5>Web Development Intern</h5>
                     </p>
-                    <p> rdfh</p>
-
-                    <a></a>
                 </div>
             </div>
             <div id="internship" className="mx-auto p-3 border border-secondary text-left">
@@ -171,6 +187,7 @@ class Navbar extends React.Component{
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">PHP</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MySQL</span>
                     <br />
+                    <a href="https://github.com/sark-2110/School-Management-System">View on Github</a>
                     <br />
                     <p className="college" style={{borderTop: "1px solid #CEC8C8"}}>
                         <b>HOTEL MANAGEMENT SYSTEM</b>
@@ -185,63 +202,38 @@ class Navbar extends React.Component{
                 </div>
                 
             </div>
-            <div id="contact" className="mx-auto bg-light p-5">
+            <div id="contact" className="bg-light p-4">
+                <div className="container">
                 <h2 className="resume-heading p-3 text-center" >CONTACT</h2>
+                <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                 <div className="row">
-                    <div className="col-lg-8">
-                        <form className="mx-auto p-3">
-
-                            <div className="form-group row">
-                                <label for="name" className="col-3 col-form-label">Name:</label>
-                                <input type="text" className="col-9 form-control" id="name" placeholder="Enter name" name="name" 
-                                    onChange={this.myChangeHandler} required />
-                            </div>
-                            <h6 style={{fontWeight:"lighter"}}>Entered Name is: {this.state.name}</h6>
-
-                            <div className="form-group row">
-                                <label for="email" className="col-3 form-label">Email:</label>
-                                <input type="email" className="col-9 form-control" id="email" placeholder="Enter Email" name="email" 
-                                    onChange={this.myChangeHandler} required />
-                            </div>
-                            <h6 style={{fontWeight:"lighter"}}>Entered Email is: {this.state.email}</h6>
-
-                            <div className="form-group row">
-                                <label for="subject" className="col-3 col-form-label">Subject:</label>
-                                <input type="text" className="col-9 form-control" id="subject" placeholder="Enter Subject" name="subject" 
-                                    onChange={this.myChangeHandler} />
-                            </div>
-                            <h6 style={{fontWeight:"lighter"}}>Entered Subject is: {this.state.subject}</h6>
-
-                            <div className="form-group row">
-                                <label for="message" className="col-3 col-form-label">Message:</label>
-                                <textarea type="textarea" className="col-9 form-control" id="message" placeholder="Enter message" 
-                                    name="message" rows={3}
-                                    onChange={this.myChangeHandler} required />
-                            </div>
-                            <h6 style={{fontWeight:"lighter"}}>Entered Message is: {this.state.message}</h6>
-                            <button type="submit" value="submit" className="btn btn-outline-dark ">SUBMIT</button>
-                            <div>
-                                { window.location.hash === '#success' &&
-                                    <div id="success">
-                                    <p>Your message has been sent!</p>
-                                    </div>
-                                }
-                                { window.location.hash === '#error' &&
-                                    <div id="error">
-                                    <p>An error occured while submitting the form.</p>
-                                    </div>
-                                }
-                            </div>
-                        </form>
+                    <div className="rounded border border-info p-4 mb-2 mx-auto">
+                        <h4>Email</h4>
+                        <p>Email id: khandelwalsarvesh8@gmail.com</p>
+                        <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
+                        className="btn btn-outline-dark">
+                            <i className="fa fa-envelope-o"> Email</i>
+                        </a>
                     </div>
-                    <div className="col-lg-4 p-4">
-                        <h4 className="text-left">Address:</h4>
-                        <p className="text-left">Sarvesh Khandelwal <br/>
-                            304,A-6 Wing,Siddhart Nagar Complex, <br/>
-                            Siddhart Nagar,Borivali(East),<br/>
-                            Mumbai-400066</p>
-                        <p className="text-left">+91-9834944612</p>
+                    <div className="rounded border border-info p-4 mb-2 mx-auto">
+                        <h4>Email</h4>
+                        <p>Email id: khandelwalsarvesh8@gmail.com</p>
+                        <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
+                        className="btn btn-outline-dark">
+                            <i className="fa fa-envelope-o"> Email</i>
+                        </a>
                     </div>
+                    <div className="rounded border border-info p-4 mb-1 mx-auto">
+                        <h4>Email</h4>
+                        <p>Email id: khandelwalsarvesh8@gmail.com</p>
+                        <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
+                        className="btn btn-outline-dark">
+                            <i className="fa fa-envelope-o"> Email</i>
+                        </a>
+                    </div>  
+                </div>
+
+                <p>Contact Number : +91-9834944612</p>
                 </div>
             </div>
             <footer className="bg-dark text-white p-1">
