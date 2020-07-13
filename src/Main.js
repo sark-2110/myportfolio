@@ -2,7 +2,7 @@ import React from 'react';
 import myStyle from './myStyle.css'
 import Resume from './Resume.pdf'
 
-class Navbar extends React.Component{
+class Main extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -204,36 +204,44 @@ class Navbar extends React.Component{
             </div>
             <div id="contact" className="bg-light p-4">
                 <div className="container">
-                <h2 className="resume-heading p-3 text-center" >CONTACT</h2>
-                <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
-                <div className="row">
-                    <div className="rounded border border-info p-4 mb-2 mx-auto">
-                        <h4>Email</h4>
-                        <p>Email id: khandelwalsarvesh8@gmail.com</p>
-                        <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
-                        className="btn btn-outline-dark">
-                            <i className="fa fa-envelope-o"> Email</i>
-                        </a>
+                    <h2 className="resume-heading p-3 text-center" >CONTACT</h2>
+                    <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
+                    <div className="row">
+                        <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
+                            <h4 className="p-2">Email</h4>
+                            <p className="p-1">Email id: khandelwalsarvesh8@gmail.com</p>
+                            <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
+                            className="btn btn-outline-dark p-2">
+                                <i className="fa fa-envelope-o"> Email</i>
+                            </a>
+                        </div>
+                        <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
+                            <h4 className="p-2">Number</h4>
+                            <p className="p-1">Contact Number : +91-9834944612</p>
+                            <a type="button" href="tel:+62896706255135" rel="noopener noreferrer"
+                            className="btn btn-outline-dark p-2">
+                                <i className="fa fa-phone"> Contact</i>
+                            </a>
+                        </div>
+                        <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
+                            <h4 className="p-2">Social Media</h4>
+                            <p>Message me on Social Media</p>
+                            <div className="social p-2">
+                                <a href="https://www.linkedin.com/in/sarveshkhandelwal/" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-linkedin fa-2x pl-4"></i>
+                                </a>
+                                <a href="https://www.facebook.com/khandelwalsarvesh8" target="_blank"  rel="noopener noreferrer">
+                                    <i className="fa fa-facebook fa-2x pl-4"></i>
+                                </a>
+                                <a href="https://twitter.com/sark2110" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-twitter fa-2x pl-4"></i>
+                                </a>
+                                <a href="https://github.com/sark-2110" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-github fa-2x pl-4"></i>
+                                </a>
+                            </div>
+                        </div>  
                     </div>
-                    <div className="rounded border border-info p-4 mb-2 mx-auto">
-                        <h4>Email</h4>
-                        <p>Email id: khandelwalsarvesh8@gmail.com</p>
-                        <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
-                        className="btn btn-outline-dark">
-                            <i className="fa fa-envelope-o"> Email</i>
-                        </a>
-                    </div>
-                    <div className="rounded border border-info p-4 mb-1 mx-auto">
-                        <h4>Email</h4>
-                        <p>Email id: khandelwalsarvesh8@gmail.com</p>
-                        <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
-                        className="btn btn-outline-dark">
-                            <i className="fa fa-envelope-o"> Email</i>
-                        </a>
-                    </div>  
-                </div>
-
-                <p>Contact Number : +91-9834944612</p>
                 </div>
             </div>
             <footer className="bg-dark text-white p-1">
@@ -265,4 +273,4 @@ class Navbar extends React.Component{
         )
     }
 }
-export default Navbar
+export default Main
