@@ -1,6 +1,11 @@
 import React from 'react';
-import myStyle from './myStyle.css'
-import Resume from './Resume.pdf'
+import myStyle from './myStyle.css';
+import Resume from './Resume.pdf';
+import Reveal from 'react-reveal/Reveal';
+import config from 'react-reveal/globals';
+import Fade from 'react-reveal/Fade';
+ 
+config({ ssrFadeout: true });
 
 class Main extends React.Component{
     constructor(props) {
@@ -11,15 +16,15 @@ class Main extends React.Component{
       }
       componentDidMount() {
         document.addEventListener("scroll", () => {
-          const backgroundcolor = window.scrollY < 70 ? "" : "rgba(255,255,255,0.95)";
-    
+            const backgroundcolor = window.scrollY < 70 ? "" : "rgba(255,255,255,0.95)";
+            
           this.setState({ navBackground: backgroundcolor });
         });
       }
     render(){
-         return(
+        return(
 
-        <div className="container-fluid" style={{position:"relative",margin:"0",padding:"0"}}>
+        <div className="container-fluid" style={{position:"relative",margin:"0",padding:"0",textAlign:"center"}}>
             <div className="top-section">
                 <nav id="navbar" className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: `${this.state.navBackground}`}}>
                 <div className="container">
@@ -55,7 +60,8 @@ class Main extends React.Component{
                     </div>
                     </nav>
                 <div id="home" className="position-relative">
-                    <div className="inner-home tent-center position-absolute text-white">
+                    <div className="container inner-home tent-center position-absolute text-white">
+                    <Fade right cascade>
                         <h1>I'm Sarvesh Khandelwal</h1>
                         <p className="p-3"><small className="text-muted" >I'm a Computer 
                         Engineering Student interested in </small>Software Development,<br />Web Development
@@ -80,42 +86,54 @@ class Main extends React.Component{
                                 <i className="fa fa-github fa-2x pl-3"></i>
                             </a>
                         </div>
-                        
+                        </Fade>
                     </div>
                     <a href="#bio" className="down-arrow p-2 position-absolute text-light">
                         <i className="fa fa-angle-down fa-2x"></i>
                     </a>
                 </div>
             </div>
-            <div id="bio" className="console position-relative">
-
-                <div className="code position-absolute text-left text-white">
-
+            <div id="bio" className="console d-flex justify-content-center">
+                <div className="code text-left text-white">
                     <p>>> getEducation()</p>
-                    <p className="answer">&nbsp; => Bachelor Of Engineering (B.E.)</p>
+                    <Fade big cascade>
+                        <p className="answer">&nbsp; => Bachelor Of Engineering (B.E.)</p>
+                    </Fade>
                     <p>>> getUniversity()</p>
-                    <p  className="answer">&nbsp; => Mumbai University</p>
+                    <Fade big cascade>
+                    <p className="answer">&nbsp; => Mumbai University</p>
+                    </Fade>
                     <p>>> getMajor()</p>
-                    <p className="answer">&nbsp; => Computer Engineering</p>
+                    <Fade big cascade>
+                        <p className="answer">&nbsp; => Computer Engineering</p>
+                    </Fade>
                     <p>>> expectedGraduation()</p>
-                    <p className="answer">&nbsp; => May 2021</p>
+                    <Fade big cascade>
+                        <p className="answer">&nbsp; => May 2021</p>
+                    </Fade>
                     <p>>> getInterest()</p>
-                    <p className="answer">&nbsp; => ["Web Development", "Software Development" , "Machine Learning"]</p>
+                    <Fade big cascade>
+                        <p className="answer">&nbsp; => ["Web Development", "Software Development" , "Machine Learning"]</p>
+                    </Fade>
                     <p>>> getResume()</p>
-                    <p className="answer">&nbsp; => "<a target="_blank" rel="noopener noreferrer" href={Resume}>sarveshResume.pdf</a>"</p>
+                    <Fade big cascade>
+                        <p className="answer">&nbsp; => "<a target="_blank" rel="noopener noreferrer" href={Resume}>sarveshResume.pdf</a>"</p>
+                    </Fade>
                     <p>>> getEmail()</p>
-                    <p className="answer">&nbsp; => "<a href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email">
-                        khandelwalsarvesh8@gmail.com</a>"
-                    </p>
-
+                    <Fade big cascade>
+                        <p className="answer">&nbsp; => "<a href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email">
+                            khandelwalsarvesh8@gmail.com</a>"
+                        </p>
+                    </Fade>
                 </div>
-                <a href="#resume" className="down-arrow position-absolute text-info p-2">
+                <a href="#resume" className="down-arrow text-info p-2">
                     <i className="fa fa-angle-down fa-2x"></i>
                 </a>
             </div>
             <div id="resume" className="text-left">
                 <h2  className="resume-heading p-5 text-center">RESUME</h2>
                 <div className="section-education mx-auto p-2">
+                <Fade bottom>
                     <p className="resume-education p-3 border-bottom">EDUCATION</p>
                     <p className="college">
                         <b>UNIVERSITY OF MUMBAI</b>
@@ -146,10 +164,12 @@ class Main extends React.Component{
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">SQL</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
+                    </Fade>
                 </div>
             </div>
             <br />
             <div id="internship" className="mx-auto p-3 border-top text-left">
+            <Fade bottom>
                 <div className="section-education mx-auto p-2">
                     <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
                     <p className="college">
@@ -169,8 +189,10 @@ class Main extends React.Component{
                         <h5>Web Development Intern</h5>
                     </p>
                 </div>
+                </Fade>
             </div>
-            <div id="internship" className="mx-auto p-3 border border-secondary text-left">
+            <div className="mx-auto p-3 border border-secondary text-left">
+            <Fade bottom>
                 <div className="section-education mx-auto p-2">
                     <p className="resume-education p-3 border-bottom">PROJECTS</p>
                     <p className="college">
@@ -180,15 +202,16 @@ class Main extends React.Component{
                     <p>An effective solution for managing activities in School Effectively.
                         <br/>Tech Stack used:
                     </p>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">HTML</span>
+                    <span className="border border-secondary text-info pr-2 pl-2 mr-1 d-inline-block skill">HTML</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">CSS</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">JavaScript</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Bootstrap</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">PHP</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MySQL</span>
                     <br />
-                    <a href="https://github.com/sark-2110/School-Management-System">View on Github</a>
-                    <br />
+                    <div className="p-3">
+                        <a href="https://github.com/sark-2110/School-Management-System">View on Github</a>
+                    </div>
                     <p className="college" style={{borderTop: "1px solid #CEC8C8"}}>
                         <b>HOTEL MANAGEMENT SYSTEM</b>
                         <br />
@@ -200,11 +223,12 @@ class Main extends React.Component{
                     </p>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Python</span>
                 </div>
-                
+                </Fade>
             </div>
             <div id="contact" className="bg-light p-4">
                 <div className="container">
                     <h2 className="resume-heading p-3 text-center" >CONTACT</h2>
+                    <Fade bottom>
                     <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                     <div className="row">
                         <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
@@ -237,11 +261,12 @@ class Main extends React.Component{
                                     <i className="fa fa-twitter fa-2x pl-4"></i>
                                 </a>
                                 <a href="https://github.com/sark-2110" target="_blank" rel="noopener noreferrer">
-                                    <i className="fa fa-github fa-2x pl-4"></i>
+                                    <i className="fa fa-github text-dark fa-2x pl-4"></i>
                                 </a>
                             </div>
                         </div>  
                     </div>
+                    </Fade>
                 </div>
             </div>
             <footer className="bg-dark text-white p-1">
