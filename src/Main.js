@@ -153,7 +153,8 @@ class Main extends React.Component{
                     </ul>
                     <span>Tech/Language Stack:</span>
                     <br />
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-1 d-inline-block skill">C/C++</span><p-1> </p-1>
+                    <Fade left cascade>
+                    <span className="border border-secondary text-info pr-2 pl-2 mr-1 d-inline-block skill">C/C++</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Python</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">HTML</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">CSS</span>
@@ -164,6 +165,7 @@ class Main extends React.Component{
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">SQL</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
+                    </Fade>
                     </Fade>
                 </div>
             </div>
