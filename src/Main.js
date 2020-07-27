@@ -1,7 +1,6 @@
 import React from 'react';
 import myStyle from './myStyle.css';
 import Resume from './Resume.pdf';
-import Reveal from 'react-reveal/Reveal';
 import config from 'react-reveal/globals';
 import Fade from 'react-reveal/Fade';
  
@@ -17,16 +16,15 @@ class Main extends React.Component{
       componentDidMount() {
         document.addEventListener("scroll", () => {
             const backgroundcolor = window.scrollY < 70 ? "" : "rgba(255,255,255,0.95)";
-            
-          this.setState({ navBackground: backgroundcolor });
+            this.setState({ navBackground: backgroundcolor });
         });
       }
     render(){
-        return(
+    return(
 
-        <div className="container-fluid" style={{position:"relative",margin:"0",padding:"0",textAlign:"center"}}>
-            <div className="top-section">
-                <nav id="navbar" className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: `${this.state.navBackground}`}}>
+    <div className="container-fluid" style={{position:"relative",margin:"0",padding:"0",textAlign:"center"}}>
+        <div className="top-section">
+            <nav id="navbar" className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: `${this.state.navBackground}`}}>
                 <div className="container">
                     <button class="navbar-toggler" id='toggle-menu-btn' type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -58,39 +56,45 @@ class Main extends React.Component{
                             </ul>
                         </div>
                     </div>
-                    </nav>
-                <div id="home" className="position-relative">
-                    <div className="container inner-home tent-center position-absolute text-white">
-                    <Fade right cascade>
-                        <h1>I'm Sarvesh Khandelwal</h1>
-                        <p className="p-3"><small className="text-muted" >I'm a Computer 
-                        Engineering Student interested in </small>Software Development,<br />Web Development
-                        <small className="text-muted"> and </small>
-                        Machine Learning. <small className="text-muted">Let's start exploring and find more</small>
-                        <br /> <a href="#bio" style={{color:"white"}}>about me.</a></p>
-                        
-                        <div className="social pt-3">
-                            <a href="https://www.linkedin.com/in/sarveshkhandelwal/" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-linkedin fa-2x pl-3"></i>
-                            </a>
-                            <a href="https://www.facebook.com/khandelwalsarvesh8" target="_blank"  rel="noopener noreferrer">
-                                <i className="fa fa-facebook fa-2x pl-3"></i>
-                            </a>
-                            <a href="https://twitter.com/sark2110" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-twitter fa-2x pl-3"></i>
-                            </a>
-                            <a href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer">
-                                <i className="fa fa-envelope-o fa-2x pl-3"></i>
-                            </a>
-                            <a href="https://github.com/sark-2110" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github fa-2x pl-3"></i>
-                            </a>
-                        </div>
-                        </Fade>
+                </nav>
+                <div class="side-nav">
+                    <div class="fl-fl float-lk">
+                        <i class="fa fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/sarveshkhandelwal/" target="_blank" rel="noopener noreferrer">Connect!</a>
                     </div>
-                    <a href="#bio" className="down-arrow p-2 position-absolute text-light">
-                        <i className="fa fa-angle-down fa-2x"></i>
-                    </a>
+                    <div class="fl-fl float-fb">
+                        <i class="fa fa-facebook"></i>
+                        <a href="https://www.facebook.com/khandelwalsarvesh8" target="_blank"  rel="noopener noreferrer">Connect</a>
+                    </div>
+                    <div class="fl-fl float-tw">
+                        <i class="fa fa-twitter"></i>
+                        <a href="https://twitter.com/sark2110" target="_blank" rel="noopener noreferrer">Follow</a>
+                    </div>
+                    <div class="fl-fl float-mail">
+                        <i class="fa fa-envelope-o"></i>
+                        <a href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer">Email Me</a>
+                    </div>
+                    <div class="fl-fl float-git">
+                        <i class="fa fa-github"></i>
+                        <a href="https://github.com/sark-2110" target="_blank" rel="noopener noreferrer">Checkout Github</a>
+                    </div>
+                </div>
+            
+                <div id="home" className="position-relative">
+                    <div className="container p-4 inner-home tent-center position-absolute text-white">
+                        <Fade right cascade>
+                            <h1>I'm Sarvesh Khandelwal</h1>
+                        </Fade>
+                        <p className="p-3">
+                            <small className="text-muted" >I'm a Computer Engineering Student interested in </small>
+                            Software Development,<br />Web Development
+                            <small className="text-muted"> and </small>
+                            Machine Learning. 
+                            <small className="text-muted">Let's start exploring and find more</small>
+                            <br /> 
+                            <a href="#bio" style={{color:"white"}}>about me.</a>
+                        </p>
+                    </div>  
                 </div>
             </div>
             <div id="bio" className="console d-flex justify-content-center">
@@ -126,9 +130,6 @@ class Main extends React.Component{
                         </p>
                     </Fade>
                 </div>
-                <a href="#resume" className="down-arrow text-info p-2">
-                    <i className="fa fa-angle-down fa-2x"></i>
-                </a>
             </div>
             <div id="resume" className="text-left">
                 <h2  className="resume-heading p-5 text-center">RESUME</h2>
@@ -229,7 +230,7 @@ class Main extends React.Component{
             </div>
             <div id="contact" className="bg-light p-4">
                 <div className="container">
-                    <h2 className="resume-heading p-3 text-center" >CONTACT</h2>
+                    <h2 className="resume-heading p-4 text-center" >CONTACT</h2>
                     <Fade bottom>
                     <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                     <div className="row">
@@ -249,24 +250,6 @@ class Main extends React.Component{
                                 <i className="fa fa-phone"> Contact</i>
                             </a>
                         </div>
-                        <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
-                            <h4 className="p-2">Social Media</h4>
-                            <p>Message me on Social Media</p>
-                            <div className="social p-2">
-                                <a href="https://www.linkedin.com/in/sarveshkhandelwal/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fa fa-linkedin fa-2x pl-4"></i>
-                                </a>
-                                <a href="https://www.facebook.com/khandelwalsarvesh8" target="_blank"  rel="noopener noreferrer">
-                                    <i className="fa fa-facebook fa-2x pl-4"></i>
-                                </a>
-                                <a href="https://twitter.com/sark2110" target="_blank" rel="noopener noreferrer">
-                                    <i className="fa fa-twitter fa-2x pl-4"></i>
-                                </a>
-                                <a href="https://github.com/sark-2110" target="_blank" rel="noopener noreferrer">
-                                    <i className="fa fa-github text-dark fa-2x pl-4"></i>
-                                </a>
-                            </div>
-                        </div>  
                     </div>
                     </Fade>
                 </div>

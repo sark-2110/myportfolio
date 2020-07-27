@@ -9,9 +9,11 @@
 .nav-link{
   color: rgb(55, 163, 167) !important;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
 }
 .navbar-brand{
+  letter-spacing: 2px;
   color: rgb(55, 163, 167) !important;
 }
 .active{
@@ -23,6 +25,67 @@
     background-color: rgba(255,255,255,0.95) !important;
   }
 }
+  
+.fl-fl {
+  text-align: left;
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 210px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.side-nav .fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+.float-lk {
+  top: 170px;
+}
+.float-fb {
+  top: 220px;
+}
+.float-tw {
+  top: 270px;
+}
+.float-mail {
+  top: 320px;
+}
+.float-git {
+  top: 370px;
+}
+/* Floating Social Media Bar Style Ends Here */
+
+@media only screen and (max-width: 800px){
+  .side-nav{
+    display: none;
+  }
+} 
 #home{
   height: 755px;
 }
@@ -70,13 +133,14 @@
 .code .answer{
   color: #ccc;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .console{
     height: 800px;
   }
   .console .code{
     width: 80%;
     height: 80%;
+    margin-top: 5%;
   }
 }
 @media only screen and (max-width: 700px) {
