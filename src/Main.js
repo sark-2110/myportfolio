@@ -139,15 +139,12 @@ class Main extends React.Component{
             <div className="section-education mx-auto p-2">
             <Fade bottom>
                 <p className="resume-education p-3 border-bottom">EDUCATION</p>
-                <p className="college">
-                    <b>UNIVERSITY OF MUMBAI</b>
-                    <span className="float-right lead">
-                        <i>2017 - 2021</i>
-                    </span>
-                    <br />
-                    <h5>B.E. Computer Engineering</h5>
-                </p>
-                <p>Coursework:</p>
+                <b>UNIVERSITY OF MUMBAI</b>
+                <span className="float-right lead">
+                    <i>2017 - 2021</i>
+                </span>
+                <h5>B.E. Computer Engineering</h5>
+                <a>Coursework:</a>
                 <ul style={{listStyleType:"circle"}}>
                     <li>Data Structures and Algorithms</li>
                     <li>Database Management Systems</li>
@@ -155,8 +152,7 @@ class Main extends React.Component{
                     <li>Computer Network</li>
                     <li>Web Development</li>
                 </ul>
-                <span>Tech/Language Stack:</span>
-                <br />
+                <p>Tech/Language Stack:</p> 
                 <span className="border border-secondary text-info pr-2 pl-2 mr-1 d-inline-block skill">C/C++</span>
                 <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Python</span>
                 <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">HTML</span>
@@ -173,55 +169,59 @@ class Main extends React.Component{
         </div>
         <br />
         <div id="internship" className="mx-auto p-3 border-top text-left">
-            <Fade bottom>
-                <div className="section-education mx-auto p-2">
-                    <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
-                    <p className="college">
-                        <b>Invide Labs (Ongoing)</b>
-                        <span className="float-right lead">
-                            <i>10 July 2020-10 January 2021</i>
-                        </span>
-                        <br />
-                        <h5>Developer Intern</h5>
-                        <ul>
-                            <li>Working on Project “Unified communication interface for remote teams”.</li>
-                            <li>Working on various Development phases and activities.</li>
-                        </ul>
-                    </p>
-                    <p className="college">
-                        <b>Invide Labs</b>
-                        <span className="float-right lead">
-                            <i>9 June 2019-9 July 2020</i>
-                        </span>
-                        <br />
-                        <h5>SDE Intern</h5>
-                        <ul>
-                            <li>Designing and Developing main website for online developer conference for the organization.</li>
-                            <li>Working on various Development phases and activities.</li>
-                        </ul>
-                    </p>
-                    <p className="college">
-                        <b>SAHU TECHNOLOGIES</b>
-                        <span className="float-right lead">
-                            <i>2 DEC 2019-2 JAN 2020</i>
-                        </span>
-                        <br />
-                        <h5>Web Development Intern</h5>
-                        <ul>
-                            <li>Designed and Developed the Front-End Solution for the organization.</li>
-                            <li>HTML, CSS, JavaScript are the technologies used.</li>
-                        </ul>
-                    </p>
-                </div>
-            </Fade>
+            <div className="section-education mx-auto p-2">
+                <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
+                <Fade bottom>
+                <p>
+                    <b>INVIDE LABS (Ongoing)</b>
+                    <span className="float-right lead">
+                        <i>10 July 2020-10 January 2021</i>
+                    </span>
+                    <br />
+                    <h5>Developer Intern</h5>
+                    <ul style={{listStyleType:"circle"}}>
+                        <li>Working on Project “Unified communication interface for remote teams”.</li>
+                        <li>Working on various Development phases and activities.</li>
+                    </ul>
+                </p>
+                </Fade>
+                <Fade bottom>
+                <p>
+                    <b>INVIDE LABS</b>
+                    <span className="float-right lead">
+                        <i>9 June 2019-9 July 2020</i>
+                    </span>
+                    <br />
+                    <h5>SDE Intern</h5>
+                    <ul style={{listStyleType:"circle"}}>
+                        <li>Designing and Developing main website for online developer conference for the organization.</li>
+                        <li>Working on various Development phases and activities.</li>
+                    </ul>
+                </p>
+                </Fade>
+                <Fade bottom>
+                <p>
+                    <b>SAHU TECHNOLOGIES</b>
+                    <span className="float-right lead">
+                        <i>2 DEC 2019-2 JAN 2020</i>
+                    </span>
+                    <br />
+                    <h5>Web Development Intern</h5>
+                    <ul style={{listStyleType:"circle"}}>
+                        <li>Designed and Developed the Front-End Solution for the organization.</li>
+                        <li>HTML, CSS, JavaScript are the technologies used.</li>
+                    </ul>
+                </p>
+                </Fade>
+            </div>
         </div>
         <div className="mx-auto p-3 border border-secondary text-left">
             <Fade bottom>
                 <div className="section-education mx-auto p-2">
                     <p className="resume-education p-3 border-bottom">PROJECTS</p>
                     <div className="p-2 border-bottom">
-                        <p className="college">
-                            <b>Unified Communication Interface for Remote Teams</b>
+                        <p>
+                            <b>UNIFIED COMMUNICATION INTERFACE FOR REMOTE TEAMS</b>
                             <br />
                         </p>
                         <p>This Project will integrates all the messaging/social media messenger into One app that will 
@@ -237,7 +237,7 @@ class Main extends React.Component{
                         <br />
                     </div>
                     <div className="p-2 border-bottom">
-                        <p className="college">
+                        <p>
                             <b>COVID-19 TRACKER</b>
                             <br />
                         </p>
@@ -252,7 +252,7 @@ class Main extends React.Component{
                         </div>
                     </div>
                     <div className="p-2 border-bottom">
-                        <p className="college">
+                        <p>
                             <b>EXPENSE TRACKER</b>
                             <br />
                         </p>
@@ -269,7 +269,7 @@ class Main extends React.Component{
                         </div>
                     </div>
                     <div className="p-2 border-bottom">
-                        <p className="college">
+                        <p>
                             <b>HOT AND COLD GAME</b>
                             <br />
                         </p>
@@ -283,7 +283,7 @@ class Main extends React.Component{
                         </div>
                     </div>
                     <div className="p-2">
-                        <p className="college">
+                        <p>
                             <b>EXERCISE TRACKER</b>
                             <br />
                         </p>
@@ -311,7 +311,7 @@ class Main extends React.Component{
                             <h4 className="p-2">Email</h4>
                             <p className="p-1">Email id: khandelwalsarvesh8@gmail.com</p>
                             <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
-                            className="btn btn-outline-dark p-2">
+                                className="btn btn-outline-dark p-2">
                                 <i className="fa fa-envelope-o"> Email</i>
                             </a>
                         </div>
@@ -319,7 +319,7 @@ class Main extends React.Component{
                             <h4 className="p-2">Number</h4>
                             <p className="p-1">Contact Number : +91-9834944612</p>
                             <a type="button" href="tel:+62896706255135" rel="noopener noreferrer"
-                            className="btn btn-outline-dark p-2">
+                                className="btn btn-outline-dark p-2">
                                 <i className="fa fa-phone"> Contact</i>
                             </a>
                         </div>
@@ -349,7 +349,7 @@ class Main extends React.Component{
                 </a>
             </div>
             <div>
-                <p className="text-muted p-2">©Copyright <b>Sarvesh Khandelwal </b>.All Rights Reserved.</p>
+                <p className="text-muted p-2">©Copyright <b>Sarvesh Khandelwal </b>. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
