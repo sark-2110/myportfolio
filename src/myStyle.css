@@ -25,13 +25,12 @@
     background-color: rgba(255,255,255,0.95) !important;
   }
 }
-  
 .fl-fl {
   text-align: left;
   background: #000000;
   text-transform: uppercase;
   letter-spacing: 3px;
-  padding: 4px;
+  padding: 5px;
   width: 210px;
   position: fixed;
   right: -160px;
@@ -45,9 +44,9 @@
 }
 
 .side-nav .fa {
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
-  padding: 10px 0;
+  padding: 12px 0;
   width: 40px;
   margin-left: 8px;
 }
@@ -79,15 +78,15 @@
 .float-git {
   top: 370px;
 }
-/* Floating Social Media Bar Style Ends Here */
 
 @media only screen and (max-width: 800px){
   .side-nav{
     display: none;
   }
-} 
+}
+/* Floating Social Media Bar Style Ends Here */
 #home{
-  height: 755px;
+  height: 720px;
 }
 .inner-home{
   top: 50%;

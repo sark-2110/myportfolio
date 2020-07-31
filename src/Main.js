@@ -96,6 +96,9 @@ class Main extends React.Component{
                         </p>
                     </div>  
                 </div>
+                <a href="#bio" className="text-info" data-toggle="tooltip" title="Scroll to Top">
+                    <i className="fa fa-angle-down fa-2x"></i>
+                </a>
             </div>
             <div id="bio" className="console d-flex justify-content-center">
                 <div className="code text-left text-white">
@@ -154,7 +157,6 @@ class Main extends React.Component{
                     </ul>
                     <span>Tech/Language Stack:</span>
                     <br />
-                    <Fade left cascade>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-1 d-inline-block skill">C/C++</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Python</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">HTML</span>
@@ -166,8 +168,7 @@ class Main extends React.Component{
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">SQL</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
                     <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
-                    </Fade>
-                    </Fade>
+                </Fade>
                 </div>
             </div>
             <br />
@@ -176,20 +177,40 @@ class Main extends React.Component{
                 <div className="section-education mx-auto p-2">
                     <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
                     <p className="college">
+                    <b>Invide Labs (Ongoing)</b>
+                        <span className="float-right lead">
+                            <i>10 July 2020-10 January 2021</i>
+                        </span>
+                        <br />
+                        <h5>Developer Intern</h5>
+                        <ul>
+                            <li>Working on Project “Unified communication interface for remote teams”.</li>
+                            <li>Working on various Development phases and activities.</li>
+                        </ul>
+                    </p>
+                    <p className="college">
                         <b>Invide Labs</b>
                         <span className="float-right lead">
-                            <i>25 May 2019-25 July 2020</i>
+                            <i>9 June 2019-9 July 2020</i>
                         </span>
                         <br />
                         <h5>SDE Intern</h5>
+                        <ul>
+                            <li>Designing and Developing main website for online developer conference for the organization.</li>
+                            <li>Working on various Development phases and activities.</li>
+                        </ul>
                     </p>
                     <p className="college">
                         <b>SAHU TECHNOLOGIES</b>
                         <span className="float-right lead">
-                            <i>DEC 2019-JAN 2020</i>
+                            <i>2 DEC 2019-2 JAN 2020</i>
                         </span>
                         <br />
                         <h5>Web Development Intern</h5>
+                        <ul>
+                            <li>Designed and Developed the Front-End Solution for the organization.</li>
+                            <li>HTML, CSS, JavaScript are the technologies used.</li>
+                        </ul>
                     </p>
                 </div>
                 </Fade>
@@ -198,43 +219,95 @@ class Main extends React.Component{
             <Fade bottom>
                 <div className="section-education mx-auto p-2">
                     <p className="resume-education p-3 border-bottom">PROJECTS</p>
-                    <p className="college">
-                        <b>SCHOOL MANAGEMENT SYSTEM</b>
+                    <div className="p-2 border-bottom">
+                        <p className="college">
+                            <b>Unified Communication Interface for Remote Teams</b>
+                            <br />
+                        </p>
+                        <p>This Project will integrates all the messaging/social media messenger into One app that will 
+                            try to improve the productivity will aim of reducing wastage of time in communication.
+                            <br/>Tech Stack used:
+                        </p>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">HTML</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">CSS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">JavaScript</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">Bootstrap</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ElectronJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
                         <br />
-                    </p>
-                    <p>An effective solution for managing activities in School Effectively.
-                        <br/>Tech Stack used:
-                    </p>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-1 d-inline-block skill">HTML</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">CSS</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">JavaScript</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Bootstrap</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">PHP</span>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">MySQL</span>
-                    <br />
-                    <div className="p-3">
-                        <a href="https://github.com/sark-2110/School-Management-System">View on Github</a>
                     </div>
-                    <p className="college" style={{borderTop: "1px solid #CEC8C8"}}>
-                        <b>HOTEL MANAGEMENT SYSTEM</b>
-                        <br />
-                    </p>
-                    <p>Created a hotel management system using PYTHON GUI and database.
-                        Simple yet effective solution for managing check-in and check out of customer and displaying a list of 
-                        present customers also
-                        <br/>Tech Stack used:
-                    </p>
-                    <span className="border border-secondary text-info pr-2 pl-2 mr-2 d-inline-block skill">Python</span>
+                    <div className="p-2 border-bottom">
+                        <p className="college">
+                            <b>COVID-19 TRACKER</b>
+                            <br />
+                        </p>
+                        <p>Provides the daily updates on COVID19 status like number of confirmed cases, recovered people and deaths 
+                            along with global and country wise status. With data updated daily from John Hopkins University 
+                            CSSE built using ReactJS
+                            <br/>Tech Stack used:
+                        </p>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
+                        <div className="p-2">
+                            <a href="https://github.com/sark-2110/COVID19-TRACKER">View on Github</a>
+                        </div>
+                    </div>
+                    <div className="p-2 border-bottom">
+                        <p className="college">
+                            <b>EXPENSE TRACKER</b>
+                            <br />
+                        </p>
+                        <p>Keeps Track of daily expense and also keeps tracks of all activity including expense and income so it 
+                            easier to track of money spent as well as received in much simplified way through an app.
+                            <br/>Tech Stack used:
+                        </p>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
+                        <div className="p-2">
+                            <a href="https://github.com/sark-2110/ExpenseTracker-MERN">View on Github</a>
+                        </div>
+                    </div>
+                    <div className="p-2 border-bottom">
+                        <p className="college">
+                            <b>HOT AND COLD GAME</b>
+                            <br />
+                        </p>
+                        <p>Modified Version of the Old Classic Game Guess the Number in a new Format which makes it much more easier 
+                            to play and win. 
+                            <br/>Tech Stack used:
+                        </p>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
+                        <div className="p-2">
+                            <a href="https://github.com/sark-2110/hot-cold-game">View on Github</a>
+                        </div>
+                    </div>
+                    <div className="p-2">
+                        <p className="college">
+                            <b>EXERCISE TRACKER</b>
+                            <br />
+                        </p>
+                        <p>Keeps track of daily expense along with log of daily exercise
+                            <br/>Tech Stack used:
+                        </p>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
+                        <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
+                        <div className="p-2">
+                            <a href="https://github.com/sark-2110/hot-cold-game">View on Github</a>
+                        </div>
+                    </div>
                 </div>
                 </Fade>
             </div>
             <div id="contact" className="bg-light p-4">
                 <div className="container">
-                    <h2 className="resume-heading p-4 text-center" >CONTACT</h2>
+                    <h2 className="resume-heading p-5 text-center" >CONTACT</h2>
                     <Fade bottom>
                     <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                     <div className="row">
-                        <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
+                        <div className="col rounded border border-info p-4 m-3 bg-white ">
                             <h4 className="p-2">Email</h4>
                             <p className="p-1">Email id: khandelwalsarvesh8@gmail.com</p>
                             <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
@@ -242,7 +315,7 @@ class Main extends React.Component{
                                 <i className="fa fa-envelope-o"> Email</i>
                             </a>
                         </div>
-                        <div className="rounded border border-info p-4 mb-2 bg-white mx-auto">
+                        <div className="col rounded border border-info p-4 m-3 bg-white ">
                             <h4 className="p-2">Number</h4>
                             <p className="p-1">Contact Number : +91-9834944612</p>
                             <a type="button" href="tel:+62896706255135" rel="noopener noreferrer"
@@ -276,7 +349,7 @@ class Main extends React.Component{
                     </a>
                 </div>
                 <div>
-                    <p className="text-muted p-2">©Copyright Sarvesh Khandelwal</p>
+                    <p className="text-muted p-2">©Copyright <b>Sarvesh Khandelwal </b>.All Rights Reserved.</p>
                 </div>
             </footer>
         </div>
