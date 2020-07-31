@@ -1,10 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+.container-fluid{
+  position: relative ;
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+}
 .top-section{
-  background-image: url(./Images/back1.jpg);
+  background-image: url(../attachments/back1.jpg);
   background-size: cover !important;
   -webkit-background-size: cover !important;
 }
 .navbar{
-  transition:900ms ease;
+  transition: 700ms ease;
 }
 .nav-link{
   color: rgb(55, 163, 167) !important;
