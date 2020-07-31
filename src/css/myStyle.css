@@ -29,7 +29,7 @@ html {
   border-bottom: 2px solid rgb(55, 163, 167) !important;
   font-weight: 600;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
   nav {
     background-color: rgba(255,255,255,0.95) !important;
   }
