@@ -10,8 +10,8 @@ export default class Contact extends Component {
         <div id="contact" className="bg-light p-4">
             <div className="container">
                 <h2 className="resume-heading p-5 text-center" >CONTACT</h2>
+                <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                 <Fade bottom>
-                    <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                     <div className="row">
                         <div className="col-lg-5 rounded border border-info p-4 m-3 bg-white mx-auto">
                             <h4 className="p-2">Email</h4>

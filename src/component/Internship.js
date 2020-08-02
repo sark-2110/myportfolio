@@ -11,7 +11,7 @@ export default class Internship extends Component {
             <div className="section-education mx-auto p-2">
                 <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
                 <Fade bottom>
-                <p>
+                <span>
                     <b>INVIDE LABS (Ongoing)</b>
                     <span className="float-right lead">
                         <i>10 July 2020-10 January 2021</i>
@@ -22,10 +22,10 @@ export default class Internship extends Component {
                         <li>Working on Project “Unified communication interface for remote teams”.</li>
                         <li>Working on various Development phases and activities.</li>
                     </ul>
-                </p>
+                </span>
                 </Fade>
                 <Fade bottom>
-                <p>
+                <span>
                     <b>INVIDE LABS</b>
                     <span className="float-right lead">
                         <i>9 June 2019-9 July 2020</i>
@@ -36,10 +36,10 @@ export default class Internship extends Component {
                         <li>Designing and Developing main website for online developer conference for the organization.</li>
                         <li>Working on various Development phases and activities.</li>
                     </ul>
-                </p>
+                </span>
                 </Fade>
                 <Fade bottom>
-                <p>
+                <span>
                     <b>SAHU TECHNOLOGIES</b>
                     <span className="float-right lead">
                         <i>2 DEC 2019-2 JAN 2020</i>
@@ -50,7 +50,7 @@ export default class Internship extends Component {
                         <li>Designed and Developed the Front-End Solution for the organization.</li>
                         <li>HTML, CSS, JavaScript are the technologies used.</li>
                     </ul>
-                </p>
+                </span>
                 </Fade>
             </div>
             <div className="mx-auto p-3 border-top text-left">
