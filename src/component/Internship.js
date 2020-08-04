@@ -66,12 +66,12 @@ export default class Internship extends Component {
                                 try to improve the productivity will aim of reducing wastage of time in communication.
                                 <br/>Tech Stack used:
                             </p>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">HTML</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">CSS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">JavaScript</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">Bootstrap</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ElectronJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">HTML</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">CSS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">JavaScript</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">Bootstrap</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ElectronJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">NodeJS</span>
                             <br />
                         </div>
                     </Fade>
@@ -86,7 +86,7 @@ export default class Internship extends Component {
                                 CSSE built using ReactJS
                                 <br/>Tech Stack used:
                             </p>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ReactJS</span>
                             <div className="p-2">
                                 <a href="https://github.com/sark-2110/COVID19-TRACKER" target="_blank" rel="noopener noreferrer">
                                     View on Github
@@ -104,10 +104,10 @@ export default class Internship extends Component {
                                 easier to track of money spent as well as received in much simplified way through an app.
                                 <br/>Tech Stack used:
                             </p>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ReactJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">NodeJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ExpressJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">MongoDB</span>
                             <div className="p-2">
                                 <a href="https://github.com/sark-2110/ExpenseTracker-MERN" target="_blank" rel="noopener noreferrer">
                                     View on Github
@@ -125,7 +125,7 @@ export default class Internship extends Component {
                                 to play and win. 
                                 <br/>Tech Stack used:
                             </p>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ReactJS</span>
                             <div className="p-2">
                                 <a href="https://github.com/sark-2110/hot-cold-game" target="_blank" rel="noopener noreferrer">
                                     View on Github
@@ -142,10 +142,10 @@ export default class Internship extends Component {
                             <p>Keeps track of daily expense along with log of daily exercise
                                 <br/>Tech Stack used:
                             </p>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ReactJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">NodeJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">ExpressJS</span>
-                            <span className="border border-secondary text-info p-2 pl-2 mr-2 d-inline-block skill">MongoDB</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ReactJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">NodeJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">ExpressJS</span>
+                            <span className="border border-secondary text-info p-2 mr-2 d-inline-block skill">MongoDB</span>
                             <div className="p-2">
                                 <a href="https://github.com/sark-2110/Exercise-Tracker" target="_blank" rel="noopener noreferrer">
                                     View on Github

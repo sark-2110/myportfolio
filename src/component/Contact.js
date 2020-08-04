@@ -24,7 +24,7 @@ export default class Contact extends Component {
                         <div className="col-lg-5 rounded border border-info p-4 m-3 bg-white mx-auto">
                             <h4 className="p-2">Number</h4>
                             <p className="p-1">Contact Number : +91-9834944612</p>
-                            <a type="button" href="tel:+62896706255135" rel="noopener noreferrer"
+                            <a type="button" href="tel:+919834944612" rel="noopener noreferrer"
                                 className="btn btn-outline-dark p-2">
                                 <i className="fa fa-phone"> Contact</i>
                             </a>
