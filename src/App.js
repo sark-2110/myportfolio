@@ -10,12 +10,12 @@ import myStyle from './css/myStyle.css';
 function App() {
   return (
     <div className="container-fluid" style={myStyle}>
-        <Home />
-        <Bio />
-        <Education />
-        <Internship />
-        <Contact />
-        <Footer />
+      <Home />
+      <Bio />
+      <Education />
+      <Internship />
+      <Contact />
+      <Footer />
     </div>
   );
 }

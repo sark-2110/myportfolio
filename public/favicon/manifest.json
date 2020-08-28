@@ -3,11 +3,16 @@
   "name": "Sarvesh's portfolio",
   "icons": [
     {
+      "src": "\/android-icon-192x192.png",
+      "sizes": "192x192 64x64 32x32 24x24 16x16",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
       "src":"/android-chrome-192x192.png",
       "sizes": "192x192 64x64 32x32 24x24 16x16",
       "type":"image/png"
     }
   ],
-  "start_url": ".",
   "display": "standalone"
 }

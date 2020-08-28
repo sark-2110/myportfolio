@@ -10,9 +10,11 @@ export default class Contact extends Component {
         <div id="contact" className="bg-light p-4">
             <div className="container">
                 <h2 className="resume-heading p-5 text-center" >CONTACT</h2>
-                <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
-                <Fade bottom>
-                    <div className="row">
+                <Fade right>
+                    <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
+                </Fade>
+                <div className="row">
+                    <Fade bottom>
                         <div className="col-lg-5 rounded border border-info p-4 m-3 bg-white mx-auto">
                             <h4 className="p-2">Email</h4>
                             <p className="p-1">Email id: khandelwalsarvesh8@gmail.com</p>
@@ -21,6 +23,8 @@ export default class Contact extends Component {
                                 <i className="fa fa-envelope-o"> Email</i>
                             </a>
                         </div>
+                    </Fade>
+                    <Fade bottom>
                         <div className="col-lg-5 rounded border border-info p-4 m-3 bg-white mx-auto">
                             <h4 className="p-2">Number</h4>
                             <p className="p-1">Contact Number : +91-9834944612</p>
@@ -29,8 +33,8 @@ export default class Contact extends Component {
                                 <i className="fa fa-phone"> Contact</i>
                             </a>
                         </div>
-                    </div>
-                </Fade>
+                    </Fade>
+                </div>
             </div>
         </div>
         )
