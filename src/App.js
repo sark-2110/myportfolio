@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './component/Home';
 import Bio from './component/Bio';
 import Education from './component/Education';
+import WorkExperience from './component/WorkExperience';
 import Internship from './component/Internship';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Bio />
       <Education />
+      <WorkExperience />
       <Internship />
       <Contact />
       <Footer />

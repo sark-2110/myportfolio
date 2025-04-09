@@ -2,8 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 .container-fluid{
-  position: relative ;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
@@ -13,7 +12,7 @@ html {
   -webkit-background-size: cover !important;
 }
 .navbar{
-  transition: 700ms ease;
+  transition: 1s ease;
 }
 .nav-link{
   color: rgb(55, 163, 167) !important;
@@ -23,11 +22,16 @@ html {
 }
 .navbar-brand{
   letter-spacing: 2px;
+  font-weight: 600;
   color: rgb(55, 163, 167) !important;
+}
+@media only screen and (max-width: 390px) {
+  .navbar-brand{
+    font-size: 17px;
+  }
 }
 .active{
   border-bottom: 2px solid rgb(55, 163, 167) !important;
-  font-weight: 600;
 }
 @media only screen and (max-width: 1000px){
   nav {
@@ -51,7 +55,6 @@ html {
   -o-transition: all .25s ease;
   transition: all .25s ease;
 }
-
 .side-nav .fa {
   font-size: 22px;
   color: #fff;
@@ -59,11 +62,9 @@ html {
   width: 40px;
   margin-left: 8px;
 }
-
 .fl-fl:hover {
   right: 0;
 }
-
 .fl-fl a {
   color: #fff !important;
   text-decoration: none;
@@ -87,7 +88,6 @@ html {
 .float-git {
   top: 370px;
 }
-
 @media only screen and (max-width: 700px){
   .side-nav{
     display: none;
@@ -95,7 +95,15 @@ html {
 }
 /* Floating Social Media Bar Style Ends Here */
 #home{
-  height: 720px;
+  height: 780px;
+}
+.explore{
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 10px 30px 10px 30px;
+  letter-spacing: 2px;
 }
 .inner-home{
   top: 50%;
@@ -105,16 +113,22 @@ html {
 .inner-home h1{
     font-size: 80px;
 }
+@media only screen and (max-width: 1100px) {
+  .inner-home h1{
+    font-size: 70px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .inner-home h1{
-    font-size: 60px;
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .inner-home h1{
+    font-size: 43px;
   }
 }
 .inner-home p{
-  font-size: 20px;
-  border-bottom: 1px solid grey;
-}
-.inner-home small{
   font-size: 20px;
 }
 .social a{
@@ -163,7 +177,6 @@ html {
     padding:30px 20px;
   }
 }
-
 #resume{
   font-size: 17px;
   line-height: 40px;
@@ -209,4 +222,10 @@ html {
 #internship{
   font-size: 17px;
   line-height: 30px;
+}
+#contact{
+  font-size: 17px;
+}
+#contact a{
+  font-size: 17px;
 }

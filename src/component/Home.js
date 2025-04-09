@@ -13,24 +13,23 @@ export default class Home extends React.Component {
             <Navbar />
             <SocialNavbar />
             <div id="home" className="position-relative">
-                <div className="container p-4 inner-home tent-center position-absolute text-white">
+                <div className="container inner-home position-absolute text-white">
                     <Fade right cascade>
-                        <h1>I'm Sarvesh Khandelwal</h1>
+                        <h1>Hey there!</h1>
+                        <h1>I'm SARVESH KHANDELWAL</h1>
                     </Fade>
-                    <p className="p-3">
-                        <small className="text-muted" >I'm a Computer Engineering Student interested in </small>
-                        Software Development,<br />Web Development
-                        <small className="text-muted"> and </small>
-                        Machine Learning. 
-                        <small className="text-muted">Let's start exploring and find more</small>
-                        <br /> 
-                        <a href="#bio" style={{color:"white"}}>about me.</a>
+                    <p className="p-4">
+                        I'm a Computer Engineering Student interested in Software Development,<br />
+                        Web Development and Machine Learning. Let's start exploring and find more<br /> 
+                        <a href="#bio" className="text-white">about me.</a>
                     </p>
+                    <div className="row justify-content-center p-3">
+                    <a type="button" href="#bio" className="explore btn btn-outline-light" data-toggle="tooltip" title="Scroll to Bio   ">
+                        EXPLORE&nbsp;<i className="fa fa-angle-down"></i>
+                    </a>
+                    </div>
                 </div>  
             </div>
-            <a href="#bio" className="text-info" data-toggle="tooltip" title="Scroll to Top">
-                <i className="fa fa-angle-down fa-2x"></i>
-            </a>
         </div>
         )
     }

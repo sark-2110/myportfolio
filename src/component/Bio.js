@@ -22,13 +22,13 @@ export default class Bio extends React.Component {
                 <Fade big cascade>
                     <p className="answer">&nbsp; => Computer Engineering</p>
                 </Fade>
-                <p>>> expectedGraduation()</p>
+                <p>>> GraduationDate()</p>
                 <Fade big cascade>
                     <p className="answer">&nbsp; => May 2021</p>
                 </Fade>
                 <p>>> getInterest()</p>
                 <Fade big cascade>
-                    <p className="answer">&nbsp; => ["Web Development", "Software Development" , "Machine Learning"]</p>
+                    <p className="answer">&nbsp; => ["Web Development", "Software Development"]</p>
                 </Fade>
                 <p>>> getResume()</p>
                 <Fade big cascade>

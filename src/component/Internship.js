@@ -12,7 +12,7 @@ export default class Internship extends Component {
                 <p className="resume-education p-3 border-bottom">INTERNSHIP</p>
                 <Fade bottom>
                 <span>
-                    <b>INVIDE LABS (Ongoing)</b>
+                    <b>INVIDE LABS</b>
                     <span className="float-right lead">
                         <i>10 July 2020-10 January 2021</i>
                     </span>

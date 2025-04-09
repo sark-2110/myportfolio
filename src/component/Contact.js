@@ -14,22 +14,21 @@ export default class Contact extends Component {
                     <h2 className="name p-5 text-center">SARVESH KHANDELWAL</h2>
                 </Fade>
                 <div className="row">
-                    <Fade bottom>
-                        <div className="col-lg-5 rounded border border-info p-4 m-3 bg-white mx-auto">
+                    <Fade left>
+                        <div className="col-lg-5 shadow-lg rounded border border-info p-4 m-3 bg-white mx-auto">
                             <h4 className="p-2">Email</h4>
-                            <p className="p-1">Email id: khandelwalsarvesh8@gmail.com</p>
+                            <p className="p-1"><b>Email id :</b> khandelwalsarvesh8@gmail.com</p>
                             <a type="button" href="mailto:khandelwalsarvesh8@gmail.com?subject=Contact Email" rel="noopener noreferrer"
                                 className="btn btn-outline-dark p-2">
                                 <i className="fa fa-envelope-o"> Email</i>
                             </a>
                         </div>
                     </Fade>
-                    <Fade bottom>
-                        <div className="col-lg-5 rounded border border-info p-4 m-3 bg-white mx-auto">
+                    <Fade right>
+                        <div className="col-lg-5 shadow-lg rounded border border-info p-4 m-3 bg-white mx-auto">
                             <h4 className="p-2">Number</h4>
-                            <p className="p-1">Contact Number : +91-9834944612</p>
-                            <a type="button" href="tel:+919834944612" rel="noopener noreferrer"
-                                className="btn btn-outline-dark p-2">
+                            <p className="p-1"><b>Contact Number :</b> +91-9834944612</p>
+                            <a type="button" href="tel:+919834944612" rel="noopener noreferrer" className="btn btn-outline-dark p-2">
                                 <i className="fa fa-phone"> Contact</i>
                             </a>
                         </div>
